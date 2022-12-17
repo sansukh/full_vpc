@@ -4,11 +4,11 @@ pipeline {
         terraform 'terraform'
         }
     stages {
-     stage('Git Checkout') {
-            steps {
-                git 'https://github.com/sansukh/full_vpc'
-            }
-        } 
+//      stage('Git Checkout') {
+//             steps {
+//                 git 'https://github.com/sansukh/full_vpc'
+//             }
+//         } 
         stage('Terraform Init') {
             steps {
                 sh 'terraform init'
