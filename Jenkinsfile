@@ -6,7 +6,7 @@ pipeline {
     stages {
      stage('Git Checkout') {
             steps {
-                git branch: 'test', credentialsId: 'git', url: 'https://github.com/sansukh/full_vpc/edit/main/Jenkinsfile'
+                git branch: 'test', credentialsId: 'git', url: 'https://github.com/sansukh/full_vpc'
             }
         } 
         stage('Terraform Init') {
